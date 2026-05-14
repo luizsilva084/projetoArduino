@@ -1,15 +1,27 @@
-# LED + Bateria 9V
+# Pisca LED com Arduino
 
-Circuito simples feito no Tinkercad.
+Projeto simples de pisca LED utilizando Arduino Uno no Tinkercad.
 
 ## Componentes
-- LED vermelho
-- Resistor
-- Bateria 9V
+- Arduino Uno
+- LED
+- Resistor 220?
 - Protoboard
 
 ## Funcionamento
-O LED acende usando alimentaï¿½ï¿½o de uma bateria 9V com resistor para limitar corrente.
+O LED liga e desliga continuamente usando a função `digitalWrite()` e `delay()`.
 
-## Imagem do circuito
-![Circuito](circuito.png)
+## Código principal
+
+```cpp
+void setup() {
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+
+  digitalWrite(13, LOW);
+  delay(1000);
+}
