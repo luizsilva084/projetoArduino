@@ -5,13 +5,13 @@ Projeto simples de pisca LED utilizando Arduino Uno no Tinkercad.
 ## Componentes
 - Arduino Uno
 - LED
-- Resistor 220?
+- Resistor 220
 - Protoboard
 
 ## Funcionamento
-O LED liga e desliga continuamente usando a função `digitalWrite()` e `delay()`.
+O LED liga e desliga continuamente usando a funÃ§Ã£o `digitalWrite()` e `delay()`.
 
-## Código principal
+## CÃ³digo principal
 
 ```cpp
 void setup() {
@@ -25,3 +25,5 @@ void loop() {
   digitalWrite(13, LOW);
   delay(1000);
 }
+
+
